@@ -29,9 +29,9 @@ def get_internal_stress(x,shear_modulus,poissons_ratio,burgers_vector):
     return np.array(tau)
 #Function to plot the Trajectories
 def plot_trajectories(times,positions):
-    plt.title('Trajectory of dislocations')
-    plt.ylabel('times[ns]')
-    plt.xlabel('Position of Dislocations[$\mu$m]')
+    plt.title('Trajectory of dislocations', fontsize = 20)
+    plt.ylabel('times[ns]', fontsize = 20)
+    plt.xlabel('Position of Dislocations[$\mu$m]', fontsize = 20)
     plt.plot((np.asarray(positions)*1e6),(np.asarray(times)*1e9), marker='')
     plt.legend(("Dislocation 1", "Dislocation 2","Dislocation 3","Dislocation 4"))
     plt.tight_layout()
